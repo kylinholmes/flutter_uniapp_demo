@@ -1,0 +1,33 @@
+syntax="proto3";
+// import "google/protobuf/empty.proto";
+package internal;
+
+
+enum MsgType {
+    RawData = 0;
+};
+
+enum NodeType {
+    Native  = 0;
+    Flutter = 1;
+    Uniapp  = 2;
+}
+
+message NodeInfo {
+    string   name = 1;
+    string   uuid = 2;
+    NodeType type = 3;
+}
+
+
+
+message Msg {
+    MsgType type = 1;
+    NodeInfo src = 2;
+    NodeInfo dst = 3;
+
+    oneof data {
+        string rawdata = 4;
+
+    }
+}

@@ -67,5 +67,9 @@
 		<key>appkey</key>
 		<string>6c00a718c8b711bcb5b4ab34f90a66bd</string>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs access to location when open.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>NSLocationAlwaysAndWhenInUseUsageDescription</string>
 </dict>
 </plist>
